@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+void calcularPuntajeFutbol() {
   print('Calcular el puntaje de un equipo de fútbol');
   print('Ingrese los partidos ganados:');
   int ganados = int.parse(stdin.readLineSync()!);

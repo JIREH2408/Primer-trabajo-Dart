@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+void calcularPromedioEstudiante() {
   print('Calcular el promedio de un estudiante');
   print('Ingrese la primera nota:');
   double nota1 = double.parse(stdin.readLineSync()!);

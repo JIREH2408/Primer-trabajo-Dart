@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+void calcularDistancia() {
   print('Calcular la distancia recorrida');
   print('Ingrese la velocidad en m/s:');
   double velocidad = double.parse(stdin.readLineSync()!);
@@ -9,4 +9,8 @@ void main() {
 
   double distancia = velocidad * tiempo;
   print('La distancia recorrida es: $distancia metros');
+}
+
+void punto1() {
+
 }

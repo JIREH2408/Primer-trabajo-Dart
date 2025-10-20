@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
-void main() {
+void calcularHipotenusaTriangulo() {
   print('Calcular la hipotenusa de un triángulo rectángulo');
   print('Ingrese el cateto A:');
   double a = double.parse(stdin.readLineSync()!);

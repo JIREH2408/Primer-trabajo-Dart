@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+void convertirTemperatura() {
   print('Convertir temperatura de °C a °F');
   print('Ingrese la temperatura en °C:');
   double celsius = double.parse(stdin.readLineSync()!);

@@ -75,3 +75,58 @@
 //   nombreUsuario = stdin.readLineSync();
 //   print('Hola, $nombreUsuario, bienvenido a Dart!');
 // }
+
+import 'dart:io';
+import 'punto1.dart';
+import 'punto2.dart';
+import 'punto3.dart';
+import 'punto4.dart';
+import 'punto5.dart';
+import 'punto6.dart';
+
+void main() {
+  int opcion = 0;
+
+  while (opcion != 7) {
+    print('DIJITE LA OPCION DE LA OPERACION QUE DESEA HACER(1-7):');
+    print('1. Calcular distancia recorrida');
+    print('2. Calcular promedio de estudiante');
+    print('3. Calcular el puntaje de un equipo de fútbol');
+    print('4. Calcular la planilla de trabajo de un empleado');
+    print('5. Calcular la hipotenusa de un triángulo');
+    print('6. Convertir temperatura de °C a °F');
+    print('7. Salir');
+    opcion = int.parse(stdin.readLineSync()!);
+
+    switch (opcion) {
+      case 1:
+        calcularDistancia();
+        break;
+      case 2:
+        calcularPromedioEstudiante();
+        break;
+      case 3:
+        calcularPuntajeFutbol();
+        break;
+      case 4:
+        calcularPlanillaEmpleado();
+        break;
+      case 5:
+        calcularHipotenusaTriangulo();
+        break;
+      case 6:
+        convertirTemperatura();
+        break;
+      case 7:
+        print('Saliendo del programa...');
+        break;
+      default:
+        print('Opción no válida, intente de nuevo.');
+    }
+
+    if (opcion != 7) {
+      print('Presione ENTER para volver al menú...');
+      stdin.readLineSync();
+    }
+  }
+}

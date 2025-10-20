@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void main() {
+void calcularPlanillaEmpleado() {
   print('Calcular la planilla de un empleado');
   print('Ingrese el nombre del empleado:');
   String nombre = stdin.readLineSync()!;
